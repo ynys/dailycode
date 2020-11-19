@@ -29,6 +29,7 @@ public class Leet844 {
         System.out.println(leet.backspaceCompare(s1111,s2222));
 
     }
+
     public boolean backspaceCompare(String S, String T) {
         return executeBackspace(S).equals(executeBackspace(T));
     }
