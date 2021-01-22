@@ -16,7 +16,7 @@ public class Leet733 {
 
     private void fill(int[][] image, int sr, int sc, int color, int newColor){
         //check boundaries
-        if(sr < 0 || sr > image.length || sc < 0 || sc > image[0].length
+        if(sr < 0 || sr >= image.length || sc < 0 || sc >= image[0].length
                 || image[sr][sc] != color) //does not have the same color as the starting color
             return;
 
