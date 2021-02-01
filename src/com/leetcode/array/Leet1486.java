@@ -2,13 +2,9 @@ package com.leetcode.array;
 
 public class Leet1486 {
     public int xorOperation(int n, int start) {
-        int res = 0;
-        for(int i = 0; i < n; i++){
-            if(i==0){
-                res = start;
-            }else {
-                res ^= (start + 2 * i);
-            }
+        int res = start;
+        for(int i = 1; i < n; i++){
+            res ^= (start + 2 * i);
         }
 
         return res;
