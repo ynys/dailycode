@@ -7,7 +7,6 @@ public class Leet1773 {
     //S1
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int count = 0;
-        String[] keys = {"type","color","name"};
         for(List<String> item: items){
             if(
                     "type".equals(ruleKey) && item.get(0).equals(ruleValue) ||
