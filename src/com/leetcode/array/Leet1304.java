@@ -14,6 +14,8 @@ public class Leet1304 {
     }
 
     //S2: fill up from both left and right side
+    //T: O(n)
+    //S: O(n)
     public int[] sumZero2(int n) {
         int[] res = new int[n];
         int left = 0, right = n - 1, start = 1;
